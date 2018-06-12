@@ -31,7 +31,7 @@ VERBOSITY=3
 
 help() {
   echo "CromWrap is a wrapper allowing you to start wdl workflow"
-  echo "Usage : cromwrap.sh"
+  echo "Usage : ./cromwrap.sh"
   echo "Mandatory arguments : "
   echo "        -e | --exec <cromwell[version].jar> : path to cromwell"
   echo "        -w | --wdl <workflowfile.wdl> : wdl file input"
