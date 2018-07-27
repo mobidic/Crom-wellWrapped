@@ -5,11 +5,12 @@
 # Bash wrapper to launch wdl workflow from SINGULARITY 
 #
 # By Nicolas SOIRAT - nicolas.soirat@etu.umontpellier.fr
-#           Version 0.1.0
+#           Version 1.0.0
+# ---------------------------------------------------------
+#
+#     MoBiDiC
 #
 ###########################################################
-#     MoBiDiC
-# ---------------------------------------------------------
 
 ###########################################################
 # Global 
@@ -21,16 +22,17 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-VERSION="0.1.0"
+VERSION="1.0.0"
 
 # -- Script log 
 
 VERBOSITY=3
+
 # Help 
 ###########################################################
 
 help() {
-  echo "CromWrap is a wrapper allowing you to start wdl workflow"
+  echo "CromWrap (version ${VERSION}) is a wrapper allowing you to start wdl workflow"
   echo "Usage : ./cromwrap.sh"
   echo "Mandatory arguments : "
   echo "        -e | --exec <cromwell[version].jar> : path to cromwell"
