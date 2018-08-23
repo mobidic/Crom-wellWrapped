@@ -335,4 +335,9 @@ fi
 
 info "Launching wdl command ..."
 java ${CONF} -jar ${CROMWELLFILE} run ${WORKFLOWFILE} -i ${INPUTSFILE} ${OPTION}
-info "... Done !"
+if [ "$?" -eq 0 ];then
+	info "... Done !"
+else
+	error "Command java ${CONF} -jar ${CROMWELLFILE} run ${WORKFLOWFILE} -i ${INPUTSFILE} ${OPTION} return non-zero exit code $?"
+	exit 1
+fi
