@@ -11,7 +11,7 @@ Run Cromwell command with arguments checking, providing traceability with logs
 ## Run 
 
 ```bash 
-./ccw.sh -e /PATH/TO/cromwell.jar -w workflow.wdl -i workflow_inputs.json 
+./cww.sh -e /PATH/TO/cromwell.jar -w workflow.wdl -i workflow_inputs.json 
 ```
 
 
